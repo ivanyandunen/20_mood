@@ -1,6 +1,8 @@
 # Site for the Mood
 
-[TODO. There will be project description]
+This site takes random phrase from a list and display it.
+You can open it [here](https://ivanyandunen.github.io/) or download sources and open index.html
+
 
 # Project Goals
 
