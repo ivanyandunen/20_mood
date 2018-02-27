@@ -3,21 +3,31 @@
 <head>
   <meta charset="utf-8">
   <title>Нет настроения?</title>
-  <script src="main.js"></script>
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body onload = "document.getElementById('output').innerHTML = getRandomPhrase()";>
-  <div class="container" align="center">
+<body onload = "document.getElementById('output').innerHTML = getRandomPhrase()">
+  <div class="container">
     <div>
       <h2>Как насчет плохих шуток?</h2>
       <p id="output"></p>
-      <button type="button" onclick="document.getElementById('output').innerHTML = getRandomPhrase();">
-        Следующая.
-      </button>
-    </div> 
+      <div class="button">
+        <button type="button">
+          Следующая.
+        </button>
+      </div>
+    </div>
   </div>
   <div id="footer">
     <p>За шутки спасибо группе <a href="https://vk.com/badjokesleague">Лига плохих шуток</a></p>
   </div>
+  <script>
+    $(document).ready(function(){
+      $("button").click(function() {
+        $("#output").html(getRandomPhrase());
+      });
+     });
+  </script>
 </body>
 </html>
