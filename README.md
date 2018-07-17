@@ -1,7 +1,7 @@
 # Site for the Mood
 
 This site takes random phrase from a list and display it.
-You can open it [here](https://ivanyandunen.github.io/20_mood/index.html) or download sources and open index.html
+You can download sources and open index.html
 
 
 # Project Goals
